@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Automation</title>
+</head>
+<body>
+<div id="navbar1"></div>
+<div class="container my-4">
+    <div class="row" id="card-container"></div>
+</div>
+<div id="footer"></div>
+
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../src/js/main.js"></script>
+<script>
+    loadNavBar()
+    loadFooter()
+    renderCardView('automation.json')
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.brand-bg-1 {
+    background: linear-gradient(to right, blue, purple); /* Gradient from blue to purple */
+    -webkit-background-clip: text; /* Apply the gradient to the text */
+    color: transparent;
+}
+
+.navbar-brand span {
+    font-weight: bold;
+    font-family: "Funnel Display", sans-serif;
+}
+
+#navbarSupportedContent {
+    font-family: 'Funnel Display', sans-serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: purple;
+    text-decoration: underline;
+}
+.welcome-text{
+   color: red;
+}
+
+.navbar-nav .nav-link.active {
+    color: purple !important;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
