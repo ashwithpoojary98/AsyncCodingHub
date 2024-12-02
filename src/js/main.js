@@ -38,7 +38,6 @@ async function renderCardView(file) {
                     image: '../../assets/images/'+item.image,
                     title: item.title
                 }));
-                console.log(cards);
                 const cardContainer = document.getElementById("card-container");
                 cards.forEach(card => {
                     const cardElement = document.createElement("div");
