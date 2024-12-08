@@ -11,10 +11,22 @@
 <div id="navbar1"></div>
 <div class="container my-4">
     <!-- <div class="row" id="card-container"></div> -->
-     <span class="fw-bold text-decoration-underline">Hello World Program:</span>
+    <div class="row">
+        <span class="fw-bolder text-decoration-underline">Java Main Method</span>
+        <span class="fw py-2">
+            The main method in Java is the entry point of any standalone Java application.
+            It is where the program begins its execution. Without a properly defined main method, 
+            the Java Virtual Machine (JVM) cannot run the program.
+        </span>
+        <span class="fw-bold">Signature of the Main Method Java</span>
+            <pre class="bg-light p-3">
+              <code class="text-center">public static void main(String[] args)
+            </code>
+            </pre>
+    </div>
+    <span class="fw-bold">Example</span>
      <pre class="bg-light p-3">
-        <code>
-            public class HelloWorld {
+        <code>public class HelloWorld {
                 public static void main(String[] args){
                     System.out.println("Hello World")
                 }
@@ -36,7 +48,7 @@
 <script>
     loadNavBar()
     loadFooter()
-    renderCardView('programs.json')
+    // renderCardView('programs.json')
 </script>
 
 </body>
