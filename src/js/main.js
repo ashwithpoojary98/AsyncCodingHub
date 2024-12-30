@@ -21,6 +21,7 @@ async function loadFooter() {
     try {
         const footerFile = await fetch('../../src/components/footer.html');
         document.getElementById('footer').innerHTML = await footerFile.text();
+        document.getElementById('year').textContent=new Date().getFullYear();
     } catch (error) {
         console.error("Error loading the footer:", error);
     }
