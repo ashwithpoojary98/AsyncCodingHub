@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+<body>
+<div id="navbar1"></div>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="section">
+                <h4 class="fw-bold text-center d-block">Create Your Own GPT Using Llama 3.2, LangChain, Streamlit, and Hugging Face Space</h4>
+                <a  class="fw-bold text-center d-block" href="https://huggingface.co/spaces/AshwithPoojary/AutomationTestingChatbot">Automation Testing Chat bot </a>
+            </div>
+
+            <div class="section">
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section">
+                                <span class="fw-bold">1. Create Hugging Face Account and Get Meta Approval</span>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <span class="card-title">Required Steps:</span>
+                                        <ol class="list-group list-group-numbered">
+                                            <li class="list-group-item">Create Hugging Face Account
+                                                <ul>
+                                                    <li><a href="https://huggingface.co/">Visit huggingface.co</a></li>
+                                                    <li>Sign up and verify email</li>
+                                                    <li>Generate API token</li>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item">Meta Llama 2 Access
+                                                <ul>
+                                                    <li>Apply on Meta's website</li>
+                                                    <li>Accept terms of use</li>
+                                                    <li>Wait for approval (Max 3 hours)</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                        <div class="alert alert-warning mt-3">
+                                            <strong>Important:</strong> Securely store your API token
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <span class="fw-bold">2. Create Hugging Face Space</span>
+                <div class="card shadow-sm">
+                    <div class="card-header text-black">
+                        <span class="card-title mb-0">Space Setup Guide</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="accordion" id="setupAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        1. Create New Space
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#setupAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <span class="badge bg-primary rounded-pill me-2">1</span>
+                                                Visit huggingface.co/spaces
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <span class="badge bg-primary rounded-pill me-2">2</span>
+                                                Click "Create new Space"
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <span class="badge bg-primary rounded-pill me-2">3</span>
+                                                Select Streamlit as SDK
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <span class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        2. Configure Settings
+                                    </button>
+                                </span>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#setupAccordion">
+                                    <div class="accordion-body">
+                                        <div class="card-text">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="card h-100 border-primary">
+                                                        <div class="card-header">Name</div>
+                                                        <div class="card-body">
+                                                            Choose a unique space name
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card h-100 border-success">
+                                                        <div class="card-header">Visibility</div>
+                                                        <div class="card-body">
+                                                            Set Public/Private access
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="card h-100 border-info">
+                                                        <div class="card-header">Hardware</div>
+                                                        <div class="card-body">
+                                                            Select CPU/GPU options
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <span class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        3. File Setup
+                                    </button>
+                                </span>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#setupAccordion">
+                                    <div class="accordion-body">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h6 class="card-subtitle mb-2 text-muted">requirements.txt</h6>
+                                                <pre class="bg-dark text-light p-3 rounded"><code>langchain
+streamlit
+BeautifulSoup4
+langchain_community                                                </code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info mt-4">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-info-circle-fill me-2"></i>
+                                <div>
+                                    <strong>Pro Tip:</strong> Start with CPU configuration for testing, then upgrade to GPU if needed for better performance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <span class="fw-bold">3. Imports & Core Function</span>
+                <div class="card shadow-sm">
+                <pre><code>import streamlit as st
+from langchain.llms import HuggingFaceHub
+from langchain.prompts import PromptTemplate
+
+def get_bot_response(query):
+    llm = HuggingFaceHub(
+        repo_id="meta-llama/Llama-3.2-1B-Instruct",
+        huggingfacehub_api_token=os.getenv("HF_TOKEN"),
+        model_kwargs={"temperature": 0.7, "max_length": 512}
+    )
+    template = """You are an automation expert..."""
+    return llm(prompt.format(query=query))</code></pre>
+                </div>
+                <p class="mt-3">This section initializes the Llama 3.2 model and sets up the response generation
+                    function.</p>
+            </div>
+
+            <div class="section">
+                <span class="fw-bold">4. UI Setup</span>
+                <div class="card shadow-sm">
+                <pre><code>st.set_page_config(
+    page_title="Automation Assistant",
+    page_icon="🤖",
+    layout="wide"
+)
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []</code></pre>
+                </div>
+                <p class="mt-3">Configures the Streamlit interface and initializes chat history.</p>
+            </div>
+
+
+            <div class="section">
+                <span class="fw-bold">5. Chat Interface</span>
+                <div class="card shadow-sm">
+                <pre><code>for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+if prompt := st.chat_input("Ask about test automation..."):
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    with st.chat_message("assistant"):
+        response = get_bot_response(prompt)
+        st.markdown(response)</code></pre>
+                <p class="mt-3">Handles message display and response generation in the chat interface.</p>
+            </div>
+
+            <div class="section">
+                <span class="fw-bold">6. Sidebar</span>
+                <div class="card shadow-sm">
+                <pre><code>with st.sidebar:
+    st.header("Example Questions")
+    examples = ["What is the difference between UI and API automation?", ...]</code></pre>
+                </div>
+                <p class="mt-3">Creates a sidebar with example questions for users.</p>
+            </div>
+
+            <div class="alert alert-info mt-4">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Uses Llama 3.2 model via HuggingFace</li>
+                    <li>Streamlit web interface</li>
+                    <li>Persistent chat history</li>
+                    <li>Example questions sidebar</li>
+                    <li>Your conversations and data are completely private and not shared with any third parties</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../node_modules/@popperjs/core/dist/umd/popper-base.min.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../src/js/main.js"></script>
+<script>
+    loadNavBar();
+</script>
+</body>
+</html>
