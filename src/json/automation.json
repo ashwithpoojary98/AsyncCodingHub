@@ -2,5 +2,6 @@
   {
     "image": "card1.jpg",
     "title": "What is Automation?",
-    "text": "Software Automation refers to the use of technology and tools to automate repetitive tasks and processes in software development, IT operations, or business workflows"
+    "text": "Software Automation refers to the use of technology and tools to automate repetitive tasks and processes in software development, IT operations, or business workflows",
+    "moreText":"For example, instead of manually testing every button on a website, automation can run scripts to test them for you, ensuring everything works properly without you lifting a finger. It’s like having a reliable assistant who handles the boring stuff!"
   }]

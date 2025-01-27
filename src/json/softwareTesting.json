@@ -1,6 +1,8 @@
 [
   {
-    "image": "card1.jpg",
-    "title": "What is Software Testing?",
-    "text": "Ensure the software meets both functional and non-functional requirements outlined by stakeholders"
-  }]
+      "image": "card1.jpg",
+      "title": "What is Software Testing?",
+      "text": "Ensure the software meets both functional and non-functional requirements outlined by stakeholders",
+      "moreText": "Software testing involves validating and verifying a software application or program to ensure it meets specified requirements and is free of defects."
+  }
+]

@@ -2,5 +2,7 @@
   {
     "image": "card3.jpg",
     "title": "About Microservice",
-    "text": "A microservice is an architectural style for developing software applications as a collection of loosely coupled, independently deployable services"}
+    "text": "A microservice is an architectural style for developing software applications as a collection of loosely coupled, independently deployable services",
+    "moreText": "The microservice architecture enables the rapid, frequent and reliable delivery of large, complex applications. It also enables an organization to evolve its technology stack."
+  }
 ]

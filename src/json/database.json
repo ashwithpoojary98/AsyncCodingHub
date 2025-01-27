@@ -2,5 +2,6 @@
   {
     "image": "card1.jpg",
     "title": "What is Database?",
-    "text": "A database is like a digital storage system where you keep information organized so it can be easily found, updated, or managed"
+    "text": "A database is like a digital storage system where you keep information organized so it can be easily found, updated, or managed",
+    "moreText":"Instead of keeping everything in random files or notes, a database lets you store data in tables, rows, and columns. For example, think of a library catalog: it’s essentially a database where books are categorized by title, author, genre, etc., so you can quickly find what you need. It’s the backbone of most apps and websites, silently working to keep your data in order!"
   }]
